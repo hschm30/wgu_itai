@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>HELLO</pattern>
+    <template>Hi! What is your name?</template>
+  </category>
+  
+  <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>Hello, <star />! Are you looking for career advice?
+      <button><text>Yes</text><postback>YES CAREER ADVICE</postback></button>
+      <button><text>No</text><postback>NO CAREER ADVICE</postback></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NO CAREER ADVICE</pattern>
+      <template>Okay, have a great day!</template>
+  </category>
+  
+  <category>
+      <pattern>YES CAREER ADVICE</pattern>
+      <template>Great! Do you enjoy programming? 
+      <button><text>Yes</text><postback>YES PROGRAMMING</postback></button>
+      <button><text>No</text><postback>NO PROGRAMMING</postback></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES PROGRAMMING</pattern>
+      <template>Great! Do you like working with large amounts of data? 
+      <button><text>Yes</text><postback>YES DATA</postback></button>
+      <button><text>No</text><postback>NO DATA</postback></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NO PROGRAMMING</pattern>
+      <template>Do you enjoy computer networking? 
+      <button><text>Yes</text><postback>YES NETWORKING</postback></button>
+      <button><text>No</text><postback>NO NETWORKING</postback></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES DATA</pattern>
+      <template>I think you would like being a Data Engineer!
+      <button><text>Data Engineer Info</text><url>https://www.altexsoft.com/blog/what-is-data-engineer-role-skills/</url></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NO DATA</pattern>
+      <template>Do you like front-end or back-end development? 
+      <button><text>Front-end</text><postback>YES FRONT</postback></button>
+      <button><text>Back-end</text><postback>YES BACK</postback></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES FRONT</pattern>
+      <template>I think you would like being a Front End Software Engineer!
+      <button><text>Front End Software Engineer Info</text><url>https://work.chron.com/frontend-engineer-16867.html/</url></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES BACK</pattern>
+      <template>I think you would like being a Back End Software Engineer!
+      <button><text>Back End Software Engineeer Info</text><url>https://insights.dice.com/employer-resource-center/descriptions-back-end-software-engineer/</url></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>YES NETWORKING</pattern>
+      <template>I think you would like being a Network Engineer!
+      <button><text>Network Engineer Info</text><url>https://www.fieldengineer.com/blogs/what-is-network-engineer-definition</url></button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>NO NETWORKING</pattern>
+      <template>I think you would like being a Cyber Security Engineer!
+      <button><text>Cyber Security Engineer Info</text><url>https://www.betterteam.com/cyber-security-engineer-job-description</url></button>
+      </template>
+  </category>
+  
+</aiml>
